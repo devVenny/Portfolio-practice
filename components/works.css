@@ -2,6 +2,7 @@
     width:100%;
     background: no-repeat url("/image/works\ bg.png");
     background-size: cover;
+    height: 80vh;
 }
 
 .category-btns{
@@ -41,21 +42,39 @@
 
 .projects{
     display:flex;
+    width:100%;
     justify-content: center;
-    flex-wrap: wrap;
-    padding-bottom: 20px;
+    opacity: 1;
+    transition: all .2s linear;
+}
+
+.projects .anim-out{
+    opacity: 0;
+    transform: scale(0.8) translateY(40px);
 }
 
 .project{
     position:relative;
-    width:140px;
-    height:190px;
-    margin:2px;
+    flex-basis:calc(100%/5);
+    height: 250px;
+    margin:0px 10px;
+}
+
+
+.project:hover .hover-bg{
+    opacity:1;
+    animation: hoverBg .3s linear;
+}
+
+@keyframes hoverBg {
+    from{opacity: 0};
+    to{opacity: 1};
 }
 
 .projects img{
-    max-width:100%;
-    max-height:100%;
+    width:100%;
+    height:100%;
+    background-size:cover;
 }
 
 .hover-bg{
@@ -69,11 +88,7 @@
     display:flex;
     flex-direction: column;
     justify-content: center;
-    transition: all .3s linear;
-}
-
-.project:hover .hover-bg{
-    display:flex;
+    opacity: 0;
 }
 
 .hover-bg h4{
@@ -91,3 +106,8 @@
     background-color: white;
     margin:0 auto;
 }
+
+.hide{
+    display:none;
+}
+
