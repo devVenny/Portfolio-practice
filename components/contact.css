@@ -1,0 +1,19 @@
+.contact{
+    background-color: royalblue;
+    height: 25vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.contact__title{
+    margin:30px 0px;
+}
+
+.contact__icons{
+    margin: 20px;
+}
+
+.contact__icons i{
+    margin-left:20px;
+}

@@ -1,0 +1,118 @@
+.skills{
+   background:url("/image/skills-bg.jpg");
+   color:white;
+   height: 100vh;
+}
+
+.skillsets{
+    display:flex;
+    justify-content: space-between;
+    height:600px;
+}
+
+.skillsets .skillset__left{
+    width:60%;
+    padding:10px 20px;
+}
+
+.skillsets .skillset__left:hover{
+    background-color:rgba(238, 130, 238, 0.156);
+    border-radius: 10px;
+}
+
+.skillsets .skillset__left:hover .percentage--html{
+    animation: htmlPercentage 1.5s ease-out forwards;
+    height: 5px;
+    background-color:red;
+}
+
+.skillsets .skillset__left:hover .percentage--css{
+    animation: cssPercentage 2s ease-out forwards;
+    height: 5px;
+    background-color: red;
+}
+
+.skillsets .skillset__left:hover .percentage--js{
+    animation: jsPercentage 1.5s ease-out forwards;
+    height: 5px;
+    background-color: red;
+}
+
+@keyframes htmlPercentage {
+    from{width:0%}
+    to{width:80%}
+}
+
+@keyframes cssPercentage {
+    from{width:0%}
+    to{width:70%}
+}
+
+@keyframes jsPercentage {
+    from{width:0%}
+    to{width:60%}
+}
+
+/* skillset right part */
+.skillsets .skillset__right{
+    width: 40%;
+}
+
+
+.skillset-title{
+    margin-top:30px;
+}
+
+.skillset-lists .skillset-list{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.skill__text{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:30px;
+}
+
+.percentage{
+    width:100%;
+    height: 5px;
+    background-color: white;
+}
+
+
+.skillset__right{ 
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.skillset__right .tools{
+    height: 50%;
+}
+
+.skillset__right .tools:hover{
+background-color: rgba(255, 99, 71, 0.218);
+border-radius: 10px;
+}
+
+.skillset__right .tools-list,
+.skillset__right .etc-list{
+    margin-top:30px;
+}
+
+.skillset__right .etc{
+    height: 50%;
+}
+
+.skillset__right .etc:hover{
+background-color:rgba(64, 224, 208, 0.176);
+border-radius: 10px;
+}
+
+.skillsets .skillset__left,
+.skillset__right .etc,
+.skillset__right .tools{
+transition:background-color .3s linear;
+}

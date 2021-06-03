@@ -1,0 +1,32 @@
+.recommendation{
+   background-color: forestgreen;
+   border-radius: 10px;
+   margin-bottom: 30px;
+}
+
+.recommendation__column{
+    display: flex;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.recommendation__column img{
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+    margin:0px 20px;
+}
+
+.recommendation__box .text::first-letter{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.recommendation__box .text{
+    margin-bottom: 15px;
+}
+
+.recommendation__box .name{
+    color:ghostwhite;
+    font-weight: 500;
+}
