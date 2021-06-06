@@ -45,12 +45,12 @@
     width:100%;
     justify-content: center;
     opacity: 1;
-    transition: all .2s linear;
+    transition: all .3s linear;
 }
 
-.projects .anim-out{
-    opacity: 0;
-    transform: scale(0.8) translateY(40px);
+.anim-out{
+    opacity: 0.1;
+    transform : scale(0.9) translateY(20px);
 }
 
 .project{
@@ -110,4 +110,3 @@
 .hide{
     display:none;
 }
-

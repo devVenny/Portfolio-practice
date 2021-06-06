@@ -69,27 +69,32 @@ window.addEventListener('scroll', () => {
 // animation effect showing projects 
 
 const categoryBtn = document.querySelector(".category-btns");
-const projectContainer = document.querySelector(".projects");
-const projects = document.querySelectorAll(".project")
+const projectContainer = document.querySelector(".projects")
+const projects = document.querySelectorAll(".project");
 
 
 categoryBtn.addEventListener('click', (e) => {
-    const dataFilter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
-    if(dataFilter == undefined){
-        return
-    }
+  const filter = e.target.dataset.filter  || e.target.parentNode.dataset.filter;
+  if(filter == undefined){
+      return
+  }
 
-    console.log(dataFilter);
 
+  
+projectContainer.classList.add("anim-out");
+
+
+
+setTimeout(() => {
     projects.forEach((project) => {
-        if(dataFilter == "*" || dataFilter == project.dataset.name){
+        if(filter == "*" || filter == project.dataset.name){
             project.classList.remove("hide");
         }else{
-            project.classList.add("hide");
-        }
-    })
-
-    projectContainer.classList.add("anim-out");
-
+          project.classList.add("hide");
+        };
     });
 
+    projectContainer.classList.remove("anim-out");
+}, 300)
+
+  })
