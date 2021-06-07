@@ -54,7 +54,6 @@ transform: translate(5px, 5px);
 .about__careers{
     display:flex;
     flex-direction: column;
-    align-items: flex-start;
     margin-bottom:40px;
 }
 

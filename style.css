@@ -90,36 +90,126 @@ button{
 /* media query */
 
 @media screen and (max-width:768px){
-   .navbar{
-       flex-direction: column;
-       align-items: flex-start;
-   }
 
-   .navbar .navbar__menus{
-   display:none;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   margin-top:30px;
-   margin-left:0px;
-   padding:0;
-   width:100%;
-   }
-   
-   .navbar .show{
-    display:flex;
-}
+    .navbar__head .head__logo,
+    .navbar__head .head__title{
+        font-size: 20px;
+    }
+    
+    .section{
+        padding:0px 13px;
+    }
+    
+    .section__header{
+    padding: 30px 0px;
+    }
 
-   .navbar .navbar__menus .menu{
-       width:100%;
-       margin:5px 0px;
-   }   
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-   .navbar .navbar__menus .focused{
+    .navbar .navbar__menus{
+        display:none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top:30px;
+        margin-left:0px;
+        padding:0;
+        width:100%;
+    }
+
+    .navbar .show{
+        display:flex;
+    }
+
+    .navbar .navbar__menus .menu{
+        width:100%;
+        margin:5px 0px;
+    }   
+
+    .navbar .navbar__menus .focused{
         border:none;
-   }
+    }
 
-   .toggleBtn{
-       display:flex;
-   }
+    .toggleBtn{
+        display:flex;
+    }
+
+    .about__canDos{
+        flex-direction: column;
+        margin:0;
+        padding-bottom:10px;
+    }
+
+    .about__canDos .canDo{
+        margin-bottom: 40px;
+    }
+
+    .canDo__text{
+        margin-top: 15px;
+    }
+
+    .about__careers{
+        margin: 30px 0px;
+    }
+
+    .career .career__info h3,
+    .career .career__info h4{
+        font-size:9px;
+    }
+
+    .works{
+        height:100%;
+        padding-bottom: 40px;
+    }
+
+
+    .section__header h1{
+        margin-bottom: 40px;
+    }
+
+    .skills{
+        height:80vh;
+    }
+
+    .skills .section__header h1{
+        margin-bottom: 20px;
+    }
+
+    .skillsets{
+        height:500px;
+    }
+
+    .category-btns{
+        display:Flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .category-btns .category-btn{
+        margin-bottom: 20px;
+    }
+
+    .projects{
+        flex-wrap: wrap;
+    }
+
+    .recommendation .recommendation__column{
+        flex-direction: column;
+    }
+
+    .recommendation__box{
+        margin:20px 0px;
+    }
+
+    .recommendation .recommendation__column:last-child .recommendation__box{
+        order:2;
+    } 
+
+    .recommendation .recommendation__column:last-child .recommendation__avatar{
+        order:1;
+    } 
 }
